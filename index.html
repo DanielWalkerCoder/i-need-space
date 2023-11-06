@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Satellite Viewer</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Orelega+One&family=Roboto:wght@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="content">
+
+        <h1>
+            When can I see a certain satellite?
+        </h1>
+        
+        <div class="section">
+            <div class="row">
+                <h2>
+                    Find Next Satellite Pass
+                </h2>
+            </div>
+            <div class="row">
+                <label>Location Name (Optional)</label>
+                <input id="locationName" class="fullAddress">
+            </div>
+            <div class="row">
+                <label>Street Number</label>
+                <input id="streetNumber" class="fullAddress">
+            </div>
+            <div class="row">
+                <label>Street Name</label>
+                <input id="streetName" class="fullAddress">
+            </div>
+            <div class="row">
+                <label>City</label>
+                <input id="city" class="fullAddress">
+            </div>
+            <div class="row">
+                <label>State</label>
+                <input id="state" class="fullAddress">
+            </div>
+            <div class="row">
+                <label>Postal/Zip Code</label>
+                <input id="postalCode" class="fullAddress">
+            </div>
+            <div class="row">
+                <label>Country</label>
+                <input id="country" placeholder='Type "US" for United States of America' class="fullAddress">
+            </div>
+            <div class="row">
+                <label>Satellite NORAD</label>
+                <input id="norad1" class="fullAddress">
+            </div>
+            <div class="row">
+                <button id="search1">
+                    Search
+                </button>
+            </div>
+            <ul></ul>
+        </div>
+
+        <div class="section">
+            <div class="row">
+                <h2>
+                    Notable Satellites
+                </h2>
+            </div>
+            <div class="row">
+                <div class="title">
+                    <b>Name</b>
+                </div>
+                <div class="title">
+                    <b>NORAD (Satellite ID)</b>
+                </div>
+            </div>
+            <div class="row">
+                <div class="item">
+                    Int. Space Station
+                </div>
+                <div class="item">
+                    25544
+                </div>
+            </div>
+            <div class="row">
+                <div class="item">
+                    Hubble Space Telescope
+                </div>
+                <div class="item">
+                    20580
+                </div>
+            </div>
+            <div class="row">
+                <div class="item">
+                    SpaceX Dragon
+                </div>
+                <div class="item">
+                    46920
+                </div>
+            </div>
+            <div class="row">
+                <b>Find more of the brightest satellites' NORAD IDs&nbsp;<a href="https://www.n2yo.com/satellites/?c=1">here</a>.</b>
+            </div>
+        </div>
+
+    </div>
+
+    
+    <script src="main.js"></script>
+</body>
+</html>
